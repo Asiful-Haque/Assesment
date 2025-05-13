@@ -43,7 +43,7 @@ const generateTicks = (maxValue) => {
     return ticks;
 };
 
-const CustomTooltip = ({ active, payload }) => {
+const CustomTooltip = ({ active, payload }) => { //Making the labels for each bar
     if (active && payload && payload.length) {
        const { Product, TotalSales, TotalValue } = payload[0].payload;
         return (
@@ -71,7 +71,7 @@ const title = [
     { label: "10", color: "#fee6ce" },
 ];
 
-    const { data, isLoading, isError } = useQuery({
+    const { data, isLoading, isError } = useQuery({ //The tanstack query
         queryKey: ["csvData"],
         queryFn: fetchBarData,
     });
@@ -79,7 +79,7 @@ const title = [
     if (isLoading) return <p className="text-center">Loading...</p>;
     if (isError) return <p className="text-center text-red-500">Error loading CSV data</p>;
 
-    const maxSales = Math.max(...data.map((entry) => entry.TotalSales));
+    const maxSales = Math.max(...data.map((entry) => entry.TotalSales)); //highest value for dynamic
 
     return (
         <div className="flex justify-center items-center h-screen bg-gray-100">
@@ -111,8 +111,8 @@ const title = [
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
-
-                <div className="ml-6 p-4 bg-white">
+                                {/* This part is for making the list of color demo */}
+                <div className="ml-6 p-4 bg-white"> 
                     <h2 className="text-lg font-bold mb-2 text-black">Total Value</h2>
                     <ul>
                         {title.map((item, index) => (
