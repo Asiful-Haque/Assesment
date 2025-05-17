@@ -5,6 +5,7 @@ import Papa from "papaparse";
 
 import PieChartGender from "./PieChartGender";
 import BarChartData from "./BarChart";
+import BarChartAge from "./BarChartAge";
 
 // tanstack function
 const fetchAllData = async () => {
@@ -61,8 +62,8 @@ function Home() {
         }
     }, [data]);
 
-    if (isLoading) return <p className="text-center">Loading gauge data...</p>;
-    if (isError) return <p className="text-center text-red-500">Error loading gauge CSV data</p>;
+    if (isLoading) return <p className="text-center">Loading data...</p>;
+    if (isError) return <p className="text-center text-red-500">Error loading CSV data</p>;
 
     
 
@@ -138,6 +139,9 @@ function Home() {
                     <div className="flex-1 h-100 bg-white rounded shadow">
                         <PieChartGender data={data} />
                     </div>
+                </div>
+                <div className="flex-1 h-100 bg-white rounded shadow">
+                    <BarChartAge data={data} />
                 </div>
             </main>
 
