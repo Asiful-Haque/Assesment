@@ -27,11 +27,11 @@ export default function Sidebar({ onSelectPage }) {
                     {!clicked && <span>Home</span>}
                 </button>
                 <button
-                    onClick={() => onSelectPage("analytics")}
+                    onClick={() => onSelectPage("AI Model")}
                     className="flex items-center gap-3 hover:bg-blue-600 p-2 rounded w-full text-left"
                 >
                     <BarChart2 size={20} />
-                    {!clicked && <span>Analytics</span>}
+                    {!clicked && <span>AI Model</span>}
                 </button>
                 <button
                     onClick={() => onSelectPage("settings")}

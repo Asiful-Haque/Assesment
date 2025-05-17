@@ -1,5 +1,6 @@
 "use client"
 import Home from "@/components/Home";
+import IncomePredictor from "@/components/IncomePredictor";
 import Sidebar from "@/components/Sidebar";
 import { useState } from "react";
 
@@ -15,17 +16,14 @@ export default function Dashboard() {
                     <Home />
                 )}
 
-                {selectedPage === "analytics" && (
-                    <>
-                        <h1 className="text-2xl font-bold">Analytics</h1>
-                        <p>This is your analytics page.</p>
-                    </>
+                {selectedPage === "AI Model" && (
+                    <IncomePredictor />
                 )}
 
                 {selectedPage === "settings" && (
                     <>
                         <h1 className="text-2xl font-bold">Settings</h1>
-                        <p>Adjust your preferences here.</p>
+                        <p>We will back to you soon.</p>
                     </>
                 )}
             </main>
