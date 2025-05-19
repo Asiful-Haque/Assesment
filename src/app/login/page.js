@@ -23,7 +23,7 @@ export default function LoginPage() {
 
     const handleLogin = (e) => {  //This time manual login without database connection
         e.preventDefault();
-        localStorage.setItem("admin", role);
+        localStorage.setItem("role", role);
         localStorage.setItem("isLoggedIn", "true");
         router.push("/dashboard"); //Sending to the dashboard page
     };

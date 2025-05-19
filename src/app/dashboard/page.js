@@ -2,7 +2,7 @@
 import Home from "@/components/Home";
 import IncomePredictor from "@/components/IncomePredictor";
 import Sidebar from "@/components/Sidebar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 export default function Dashboard() {

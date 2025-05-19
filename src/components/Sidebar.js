@@ -1,10 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Home, BarChart2, Settings } from "lucide-react";
 
 export default function Sidebar({ onSelectPage }) {
     const [clicked, setClicked] = useState(false);
+    const [role, setRole] = useState(null);
+
+    useEffect(() => {
+        const storedRole = localStorage.getItem("role");
+        setRole(storedRole);
+    }, []);
 
     return (
         <div
@@ -26,20 +32,25 @@ export default function Sidebar({ onSelectPage }) {
                     <Home size={20} />
                     {!clicked && <span>Home</span>}
                 </button>
-                <button
-                    onClick={() => onSelectPage("AI Model")}
-                    className="flex items-center gap-3 hover:bg-blue-600 p-2 rounded w-full text-left"
-                >
-                    <BarChart2 size={20} />
-                    {!clicked && <span>AI Model</span>}
-                </button>
-                <button
-                    onClick={() => onSelectPage("settings")}
-                    className="flex items-center gap-3 hover:bg-blue-600 p-2 rounded w-full text-left"
-                >
-                    <Settings size={20} />
-                    {!clicked && <span>Settings</span>}
-                </button>
+                {role === "admin" && (
+                    <button
+                        onClick={() => onSelectPage("AI Model")}
+                        className="flex items-center gap-3 hover:bg-blue-600 p-2 rounded w-full text-left"
+                    >
+                        <BarChart2 size={20} />
+                        {!clicked && <span>AI Model</span>}
+                    </button>
+                )}
+
+                {role === "sales" && (
+                    <button
+                        onClick={() => onSelectPage("settings")}
+                        className="flex items-center gap-3 hover:bg-blue-600 p-2 rounded w-full text-left"
+                    >
+                        <Settings size={20} />
+                        {!clicked && <span>Settings</span>}
+                    </button>
+                )}
             </nav>
         </div>
     );
