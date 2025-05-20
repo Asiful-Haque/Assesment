@@ -71,7 +71,8 @@ focuses on building an analytical dashboard with interactive charts, role-based 
 
 ![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747722654/Screenshot_from_2025-05-17_16-48-53_ahfdwy.png)
 
-**Machine Learning Model**
+**-----------------------------------🤖Machine Learning Model🤖----------------------------------------------**
+**------------------------------------------------------------------------------------------------------------**
 ![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747722675/Screenshot_from_2025-05-17_16-49-41_lfnp82.png)
 
 
