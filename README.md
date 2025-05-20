@@ -63,16 +63,16 @@ focuses on building an analytical dashboard with interactive charts, role-based 
 - Filters to customize data views.
 - Access permission as per the user
 
-![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747667988/Screenshot_from_2025-05-17_16-50-03_n5ochy.png)
+![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747722585/Screenshot_from_2025-05-17_16-50-03_n5ochy.png)
 
-![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747668048/Screenshot_from_2025-05-17_16-49-08_k6xl7d.png)
+![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747722610/Screenshot_from_2025-05-17_16-49-08_k6xl7d.png)
 
-![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747668096/Screenshot_from_2025-05-17_16-48-59_n86ykc.png)
+![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747722634/Screenshot_from_2025-05-17_16-48-59_n86ykc.png)
 
-![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747668147/Screenshot_from_2025-05-17_16-48-53_ahfdwy.png)
+![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747722654/Screenshot_from_2025-05-17_16-48-53_ahfdwy.png)
 
 **Machine Learning Model**
-![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747668234/Screenshot_from_2025-05-17_16-49-41_lfnp82.png)
+![App Screenshot](https://res.cloudinary.com/ddrvm4qt3/image/upload/v1747722675/Screenshot_from_2025-05-17_16-49-41_lfnp82.png)
 
 
 
